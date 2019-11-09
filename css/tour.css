@@ -131,6 +131,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 .hero-title {
   text-transform: uppercase;
@@ -148,6 +149,7 @@ a {
   letter-spacing: var(--mainSpacing);
   font-weight: 400;
   margin-bottom: 0.4rem;
+  padding-bottom: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -209,8 +211,209 @@ a {
 /* *****************************End about******************************* */
 /* **************************** services******************************* */
 .services {
+  background: var(--mainGrey);
+}
+.service {
   text-align: center;
   margin-bottom: 3rem;
 }
+.service-icon {
+  background: var(--primaryColor);
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.service-title {
+  text-transform: uppercase;
+}
+.service-text {
+  width: 80%;
+  line-height: 0 auto;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+@media screen and (min-width: 576px) {
+  .services-center {
+    display: flex;
+    /* after */
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .service {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  .service {
+    flex: 0 0 calc(33.33% - 1rem);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .service {
+    flex: 0 0 calc(33.33% - 1rem);
+    display: flex;
+    text-align: left;
+  }
+  .service-icon {
+    align-self: start;
+  }
+  .service-info {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .service-text {
+    width: 90%;
+    margin: 0;
+  }
+}
 
 /* *****************************End services******************************* */
+/* ***************************** featured******************************* */
+.featured {
+  background: var(--mainWhite);
+}
+.tour-card {
+  margin-bottom: 4rem;
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+}
+.tour-card:hover {
+  box-shadow: var(--darkShadow);
+}
+.tour-img-container {
+  position: relative;
+}
+.tour-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--primaryColor);
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+}
+.tour-footer {
+  padding: 1.2rem 1.5rem;
+}
+.tour-title {
+  text-transform: capitalize;
+}
+.tour-country {
+  color: var(--primaryColor);
+  text-transform: capitalize;
+}
+.tour-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tour-details p {
+  line-height: 0.2;
+  text-transform: capitalize;
+  color: var(--darkGrey);
+  letter-spacing: 0.02rem;
+}
+.tour-country {
+  align-self: center;
+}
+.tour-link {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .featured-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .tour-card {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media screen and (min-width: 768px) {
+  .tour-card {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+}
+/* ***************************** End featured******************************* */
+
+/* ***************************** gallery******************************* */
+.gallery {
+  background: var(--darkGrey);
+}
+.gallery-img-container {
+  position: relative;
+  background: var(--primaryColor);
+}
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2.5rem;
+  transform: translate(-50%, -50%);
+  color: var(--mainWhite);
+  cursor: pointer;
+  transition: var(--mainTransition);
+  opacity: 0;
+}
+.gallery-img {
+  transition: var(--mainTransition);
+}
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.5;
+}
+
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
+/* ***************************** End gallery******************************* */
+
+/* *****************************deals******************************* */
+.input-group {
+  width: 80vw;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+}
+.form-control {
+  flex: 1 1 auto;
+}
+.form-control,
+.btn-submit {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: var(--mainSpacing);
+  background: transparent;
+  text-transform: uppercase;
+  outline: none;
+  border: 2px solid var(--primaryColor);
+}
+::placeholder {
+  font-family: "Lato", sans-serif;
+  color: var(--mainBlack);
+}
+.btn-submit {
+  border-left: none;
+  cursor: pointer;
+  transition: var(--mainTransition);
+}
+.btn-submit:hover {
+  color: var(--mainWhite);
+  background: var(--primaryColor);
+}
+/* ***************************** End deals******************************* */
