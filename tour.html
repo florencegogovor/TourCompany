@@ -7,6 +7,7 @@
     <title>Backroads || Tour Company</title>
     <!-- styles -->
     <link rel="stylesheet" href="css/tour.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <!-- favicon -->
     <link
       rel="shortcut icon"
@@ -23,7 +24,57 @@
     <!-- header -->
     <header id="home">
       <!-- navbar -->
-      <nav></nav>
+      <nav class="navbar">
+        <div class="nav-center">
+          <!-- nav-header -->
+          <div class="nav-header">
+            <img
+              src="./tourImages/logo.jpg"
+              width="100px"
+              class="nav-logo"
+              alt="backroads company"
+            />
+            <button
+              type="button"
+              class="nav-toggle"
+              
+              id="nav-toggle"
+            >
+              <i class="fas fa-bars "></i>
+            </button>
+          </div>
+
+          <!-- end of navbar header-->
+          <!-- navbar links -->
+          <!-- end navbar links -->
+          <div class="nav-links" id="nav-link">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">services</a>
+            <a href="#featured" class="nav-link">featured</a>
+            <a href="#gallery" class="nav-link">gallery</a>
+          </div>
+          <!-- end nav links -->
+          <!--  nav social media icons -->
+          <div class="nav-icons">
+            <a href="https://www.udemy.com" target="_blank" class="nav-icon"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.khanacademy.org/parent"
+              target="_blank"
+              class="nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="https://www.freecodecamp.org/learn"
+              target="_blank"
+              class="nav-icon"
+              ><i class="fab fa-squarespace"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
       <div class="hero">
         <div class="hero-banner">
           <h1 class="hero-title">continue exploring</h1>
@@ -248,73 +299,142 @@
     <!-- End featured tours -->
     <!-- gallery -->
     <section class="section gallery" id="gallery">
-        <!-- title -->
+      <!-- title -->
       <div class="title-wrapper">
         <h2 class="title">our <span class="subtitle"> gallery</span></h2>
       </div>
       <!-- End title -->
       <!-- gallery center -->
-    <div class="gallery-center">
-      <!-- single item -->
-      <div class="gallery-img-container">
-        <img src="./tourImages/gallery-1.jpg" class="gallery-img" alt="awesome tour">
-       <span class="gallery-icon"> <i class="fas fa-search"></i></span>
-      </div>
-      <!-- end single item -->
-      <!-- single item -->
-      <div class="gallery-img-container">
-        <img src="./tourImages/gallery-2.jpg" class="gallery-img" alt="awesome tour">
-       <span class="gallery-icon"> <i class="fas fa-search"></i></span>
-      </div>
-      <!-- end single item -->
+      <div class="gallery-center">
         <!-- single item -->
-      <div class="gallery-img-container">
-        <img src="./tourImages/gallery-3.jpg" class="gallery-img" alt="awesome tour">
-       <span class="gallery-icon"> <i class="fas fa-search"></i></span>
-      </div>
-      <!-- end single item -->
+        <div class="gallery-img-container">
+          <img
+            src="./tourImages/gallery-1.jpg"
+            class="gallery-img"
+            alt="awesome tour"
+          />
+          <span class="gallery-icon"> <i class="fas fa-search"></i></span>
+        </div>
+        <!-- end single item -->
         <!-- single item -->
-      <div class="gallery-img-container">
-        <img src="./tourImages/gallery-4.jpg" class="gallery-img" alt="awesome tour">
-       <span class="gallery-icon"> <i class="fas fa-search"></i></span>
-      </div>
-      <!-- end single item -->
+        <div class="gallery-img-container">
+          <img
+            src="./tourImages/gallery-2.jpg"
+            class="gallery-img"
+            alt="awesome tour"
+          />
+          <span class="gallery-icon"> <i class="fas fa-search"></i></span>
+        </div>
+        <!-- end single item -->
         <!-- single item -->
-      <div class="gallery-img-container">
-        <img src="./tourImages/gallery-5.jpg" class="gallery-img" alt="awesome tour">
-       <span class="gallery-icon"> <i class="fas fa-search"></i></span>
-      </div>
-      <!-- end single item -->
+        <div class="gallery-img-container">
+          <img
+            src="./tourImages/gallery-3.jpg"
+            class="gallery-img"
+            alt="awesome tour"
+          />
+          <span class="gallery-icon"> <i class="fas fa-search"></i></span>
+        </div>
+        <!-- end single item -->
         <!-- single item -->
-      <div class="gallery-img-container">
-        <img src="./tourImages/gallery-6.jpg" class="gallery-img" alt="awesome tour">
-       <span class="gallery-icon"> <i class="fas fa-search"></i></span>
-      </div>
-      <!-- end single item -->
+        <div class="gallery-img-container">
+          <img
+            src="./tourImages/gallery-4.jpg"
+            class="gallery-img"
+            alt="awesome tour"
+          />
+          <span class="gallery-icon"> <i class="fas fa-search"></i></span>
+        </div>
+        <!-- end single item -->
         <!-- single item -->
-      <div class="gallery-img-container">
-        <img src="./tourImages/gallery-7.jpg" class="gallery-img" alt="awesome tour">
-       <span class="gallery-icon"> <i class="fas fa-search"></i></span>
+        <div class="gallery-img-container">
+          <img
+            src="./tourImages/gallery-5.jpg"
+            class="gallery-img"
+            alt="awesome tour"
+          />
+          <span class="gallery-icon"> <i class="fas fa-search"></i></span>
+        </div>
+        <!-- end single item -->
+        <!-- single item -->
+        <div class="gallery-img-container">
+          <img
+            src="./tourImages/gallery-6.jpg"
+            class="gallery-img"
+            alt="awesome tour"
+          />
+          <span class="gallery-icon"> <i class="fas fa-search"></i></span>
+        </div>
+        <!-- end single item -->
+        <!-- single item -->
+        <div class="gallery-img-container">
+          <img
+            src="./tourImages/gallery-7.jpg"
+            class="gallery-img"
+            alt="awesome tour"
+          />
+          <span class="gallery-icon"> <i class="fas fa-search"></i></span>
+        </div>
+        <!-- end single item -->
       </div>
-      <!-- end single item -->
-    </div>
     </section>
     <!-- End gallery -->
 
     <!-- deals -->
-<section class="section deals" id="deals">
-<!-- title -->
+    <section class="section deals" id="deals">
+      <!-- title -->
       <div class="title-wrapper">
         <h2 class="title">hot <span class="subtitle">deals</span></h2>
       </div>
       <!-- End title -->
-      <form  action="https://formspree.io/lbadsjob@gmail.com" method="POST">
+      <form action="https://formspree.io/lbadsjob@gmail.com" method="POST">
         <div class="input-group">
-          <input type="email" name="email" class="form-control" placeholder="your email">
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="your email"
+          />
           <button type="submit" class="btn-submit">submit</button>
         </div>
       </form>
-</section>
+    </section>
     <!-- End deals-->
+
+    <!-- Footer-->
+    <footer class="section footer">
+      <div class="footer-links">
+        <a href="#home" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#services" class="footer-link">services</a>
+        <a href="#featured" class="footer-link">featured</a>
+        <a href="#gallery" class="footer-link">gallery</a>
+      </div>
+      <div class="footer-icons">
+        <a href="https://www.udemy.com" target="_blank" class="footer-icon"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          href="https://www.khanacademy.org/parent"
+          target="_blank"
+          class="footer-icon"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.freecodecamp.org/learn"
+          target="_blank"
+          class="footer-icon"
+          ><i class="fab fa-squarespace"></i
+        ></a>
+      </div>
+      <!-- copyright -->
+      <p class="copyright">
+        copyright &copy; backroards travel tours company
+        <Span id="date"> </Span> .all rights reserved
+      </p>
+    </footer>
+
+    <!-- Javascript-->
+    <!-- <script src="./js/tour.js"></script> -->
   </body>
 </html>
