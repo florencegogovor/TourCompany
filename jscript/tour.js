@@ -8,9 +8,6 @@ const date = (document.getElementById(
 const navBtn = document.getElementById("nav-toggle");
 const links = document.getElementById("nav-links");
 
-// add events listener
-// console.log(navBtn);
-// console.log(links);
 
 navBtn.addEventListener("click", () => {
   links.classList.toggle("show-links");
